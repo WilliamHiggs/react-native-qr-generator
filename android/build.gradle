@@ -19,6 +19,7 @@ def safeExtGet(prop, fallback) {
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', 26)
     buildToolsVersion safeExtGet('buildToolsVersion', '26.1.0')
+    namespace "com.zapper"
 
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
